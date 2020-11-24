@@ -32,7 +32,7 @@ class _BookFielmPageState extends State<BookFielmPage> {
         body: Container(
             alignment: Alignment.center,
             child: ListView.builder(
-                itemExtent: 200,
+                // itemExtent: 200,
                 itemCount: itemList.length,
                 itemBuilder: (ctx, index) {
                   MovieModel model = itemList[index];
