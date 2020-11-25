@@ -190,7 +190,7 @@ class MovieItem extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('asset/images/home/wish.png'),
+          Image.asset('asset/images/home/wish.png',),
           Text(
             '想看',
             style: TextStyle(
@@ -205,6 +205,17 @@ class MovieItem extends StatelessWidget {
 
   //3.0 footer
   Widget buildFooter() {
-    return Container();
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        color: Color(0xfff2f2f2),
+        borderRadius: BorderRadius.circular(6),
+      ),
+      child: Text(
+        model.title,
+        style: TextStyle(fontSize: 20,color: Color(0xfff666666)),
+      ),
+    );
   }
 }
