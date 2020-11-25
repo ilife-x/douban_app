@@ -190,7 +190,7 @@ class MovieItem extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/images/home/wish.png'),
+          Image.asset('asset/images/home/wish.png'),
           Text(
             '想看',
             style: TextStyle(
